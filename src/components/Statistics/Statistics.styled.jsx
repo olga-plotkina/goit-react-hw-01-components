@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { getRandomHexColor } from 'utils/getRandomHexColor';
 
 export const StatisticCard = styled.section`
   width: 250px;
@@ -37,7 +38,7 @@ export const Item = styled.li`
   box-sizing: border-box;
   text-align: center;
   color: #ffffff;
-  background-color: #747474ad;
+  background-color: ${getRandomHexColor};
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 `;

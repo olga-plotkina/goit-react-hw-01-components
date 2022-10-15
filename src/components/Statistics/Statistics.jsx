@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { getRandomHexColor } from 'utils/getRandomHexColor';
+
 import { StatisticCard, Title, List, Item, Label } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
@@ -8,7 +8,7 @@ export const Statistics = ({ title, stats }) => {
       {title && <Title>{title}</Title>}
       <List>
         {stats.map(stat => (
-          <Item key={stat.id} style={{ backgroundColor: getRandomHexColor() }}>
+          <Item key={stat.id}>
             <Label>{stat.label}</Label>
             <span>{stat.percentage}%</span>
           </Item>
